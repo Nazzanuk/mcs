@@ -144,6 +144,7 @@ p {
 }
 
 .box {
+  flex: 1 1 0;
   background: white;
   border-radius: 3px;
   box-shadow: 0 15px 75px rgba(23, 55, 87, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
