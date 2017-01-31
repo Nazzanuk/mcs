@@ -98,26 +98,6 @@ app.component('contentItem', {
     }
 });
 
-app.component('headerItem', {
-    templateUrl: 'header.html',
-    controllerAs: 'header',
-    bindings: {
-        img: '@'
-    },
-    controller: function controller(Menu) {
-
-        var init = function init() {};
-
-        init();
-
-        _.extend(this, {
-            getPages: Menu.getPages,
-            setPage: Menu.setPage,
-            isCurrentPage: Menu.isCurrentPage
-        });
-    }
-});
-
 app.component('eventsItem', {
     templateUrl: 'events.html',
     controllerAs: 'events',
@@ -149,6 +129,26 @@ app.component('heroItem', {
         init();
 
         _.extend(this, {});
+    }
+});
+
+app.component('headerItem', {
+    templateUrl: 'header.html',
+    controllerAs: 'header',
+    bindings: {
+        img: '@'
+    },
+    controller: function controller(Menu) {
+
+        var init = function init() {};
+
+        init();
+
+        _.extend(this, {
+            getPages: Menu.getPages,
+            setPage: Menu.setPage,
+            isCurrentPage: Menu.isCurrentPage
+        });
     }
 });
 
@@ -186,6 +186,23 @@ app.component('mediaItem', {
     }
 });
 
+app.component('newsItem', {
+    templateUrl: 'news.html',
+    controllerAs: 'news',
+    bindings: {
+        img: '@',
+        heading: '@'
+    },
+    controller: function controller($element, $timeout) {
+
+        var init = function init() {};
+
+        init();
+
+        _.extend(this, {});
+    }
+});
+
 app.component('servicesItem', {
     templateUrl: 'services.html',
     controllerAs: 'services',
@@ -203,9 +220,9 @@ app.component('servicesItem', {
     }
 });
 
-app.component('newsItem', {
-    templateUrl: 'news.html',
-    controllerAs: 'news',
+app.component('twitterItem', {
+    templateUrl: 'twitter.html',
+    controllerAs: 'twitter',
     bindings: {
         img: '@',
         heading: '@'
