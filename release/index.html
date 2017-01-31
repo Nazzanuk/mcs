@@ -6,7 +6,7 @@
     <!--to use real urls instead of hashes uncomment below-->
     <!--<base href="/">-->
 
-    <title>Angular Base</title>
+    <title>MCS Portal</title>
     <title><%= title %></title>
     <meta name="description" content=""/>
 
@@ -35,6 +35,45 @@
         <div class="container">
             <div ng-transclude="content"></div>
         </div>
+    </div>
+</script>
+<script type="text/ng-template" id="header.html">
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="menu-items">
+                    <div class="menu-item">Menu <i class="fa fa-angle-down"></i></div>
+                    <div class="menu-item">Communication Guide</div>
+                    <div class="menu-item">Policies and Procedures</div>
+                </div>
+                <div class="menu-items" style="margin-left: auto">
+                    <div class="menu-item">Favourites <i class="fa fa-angle-down"></i></div>
+                    <div class="menu-item">Preferences <i class="fa fa-angle-down"></i></div>
+                    <div class="menu-item"><i class="fa fa-user"></i> &nbsp; Muhamed Taki</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-logo">
+                    <img src="/public/img/logo.jpg" alt="Logo">
+                </div>
+
+                <div>
+                    <div class="header-title">Ministry of Civil Services</div>
+                    <!--<div class="header-section">Human Resources</div>-->
+                </div>
+
+                <div class="header-search">
+                    <input type="search" class="header-search" placeholder="Search">
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </script>
 <script type="text/ng-template" id="events.html">
@@ -77,45 +116,6 @@
         </div>
     </div>
 
-</script>
-<script type="text/ng-template" id="header.html">
-    <div class="header">
-        <div class="header-top">
-            <div class="container">
-                <div class="menu-items">
-                    <div class="menu-item">Menu <i class="fa fa-angle-down"></i></div>
-                    <div class="menu-item">Communication Guide</div>
-                    <div class="menu-item">Policies and Procedures</div>
-                </div>
-                <div class="menu-items" style="margin-left: auto">
-                    <div class="menu-item">Favourites <i class="fa fa-angle-down"></i></div>
-                    <div class="menu-item">Preferences <i class="fa fa-angle-down"></i></div>
-                    <div class="menu-item"><i class="fa fa-user"></i> &nbsp; Muhamed Taki</div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="header-bottom">
-            <div class="container">
-                <div class="header-logo">
-                    <img src="/public/img/logo.jpg" alt="Logo">
-                </div>
-
-                <div>
-                    <div class="header-title">Ministry of Civil Services</div>
-                    <!--<div class="header-section">Human Resources</div>-->
-                </div>
-
-                <div class="header-search">
-                    <input type="search" class="header-search" placeholder="Search">
-                </div>
-            </div>
-
-        </div>
-
-    </div>
 </script>
 <script type="text/ng-template" id="hero.html">
     <div class="container">
@@ -210,41 +210,6 @@
     </div>
 
 </script>
-<script type="text/ng-template" id="news.html">
-    <div class="news">
-        <div class="container">
-            <div class="flex flex-row flex-wrap box-container">
-
-                <div class="box box-margin box-clickable" style="min-width: 300px">
-                    <div class="box-image" style="background-image: url('https://unsplash.it/1200/500/?random&4')"></div>
-                    <div class="box-content">
-                        <h3>Aspernatur ea magni nulla officiis.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
-                    </div>
-                </div>
-
-                <div class="box box-margin box-clickable" style="min-width: 300px">
-                    <div class="box-image" style="background-image: url('https://unsplash.it/1200/500/?random&5')"></div>
-                    <div class="box-content">
-                        <h3>Inventore obcaecati provident suscipit.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
-                    </div>
-                </div>
-
-                <div class="box box-margin box-clickable" style="min-width: 300px">
-                    <div class="box-image" style="background-image: url('https://unsplash.it/1200/500/?random&6')"></div>
-                    <div class="box-content">
-                        <h3>Fulit maxime sunt</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-</script>
 <script type="text/ng-template" id="services.html">
     <div class="container">
         <div class="services">
@@ -294,6 +259,41 @@
             </div>
         </div>
     </div>
+</script>
+<script type="text/ng-template" id="news.html">
+    <div class="news">
+        <div class="container">
+            <div class="flex flex-row flex-wrap box-container">
+
+                <div class="box box-margin box-clickable" style="min-width: 300px">
+                    <div class="box-image" style="background-image: url('https://unsplash.it/1200/500/?random&4')"></div>
+                    <div class="box-content">
+                        <h3>Aspernatur ea magni nulla officiis.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
+                    </div>
+                </div>
+
+                <div class="box box-margin box-clickable" style="min-width: 300px">
+                    <div class="box-image" style="background-image: url('https://unsplash.it/1200/500/?random&5')"></div>
+                    <div class="box-content">
+                        <h3>Inventore obcaecati provident suscipit.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
+                    </div>
+                </div>
+
+                <div class="box box-margin box-clickable" style="min-width: 300px">
+                    <div class="box-image" style="background-image: url('https://unsplash.it/1200/500/?random&6')"></div>
+                    <div class="box-content">
+                        <h3>Fulit maxime sunt</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
 </script>
 <script type="text/ng-template" id="about-screen.html">
     <div screen="about">
