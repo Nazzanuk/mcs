@@ -19,7 +19,7 @@ app.use(express.static('../release'));
 app.set('view engine', 'ejs');
 
 var server = app.listen(port, () => {
-    console.log('Example app listening at http://%s:%s', server.address().address, port);
+    console.log('Example app listening at http://localhost:%s', port);
 });
 
 //define our routes

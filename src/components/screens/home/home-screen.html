@@ -1,22 +1,64 @@
 <script type="text/ng-template" id="home-screen.html">
     <div screen="home">
 
-        <!-- one way pass values to component -->
-        <hero-item
-                img="https://unsplash.it/1200/500/?random"
-                heading="Welcome to Angular Base"
-        ></hero-item>
+        <div class="section flush">
+            <services-item></services-item>
+        </div>
 
-        <content-item>
-            <content>
-                <h1>What is this?</h1>
+        <div class="section flush">
+            <hero-item></hero-item>
 
-                <p>
-                    Angular base is a project developed by
-                    <a href="#">Nathan Nelson</a> to help get started with JavaScript, ES6 and single page app structure in Angular 1.5.
-                </p>
-            </content>
-        </content-item>
+        </div>
+
+        <div class="container">
+            <div class="tabs flex flex-row">
+                <div class="tab active">Latest News</div>
+                <div class="tab">HR</div>
+                <div class="tab">Financial</div>
+                <div class="tab">Activities</div>
+            </div>
+        </div>
+        <div class="section white">
+            <news-item></news-item>
+        </div>
+
+        <div class="section flush">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="section-title">Upcoming Events</h3>
+                        <events-item></events-item>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="section-title">External Links</h3>
+                        <links-item></links-item>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="section-title">Survey</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section flush">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="section-title">Latest Media</h3>
+                        <media-item></media-item>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="section-title">Twitter</h3>
+                        <div class="box box-gap">
+                            <div class="box-image"></div>
+                            <div class="box-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
 
     </div>
 </script>
