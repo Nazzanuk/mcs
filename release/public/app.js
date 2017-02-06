@@ -81,13 +81,13 @@ app.service('Menu', function ($state, $stateParams, $timeout) {
     };
 });
 
-app.component('contentItem', {
-    templateUrl: 'content.html',
-    controllerAs: 'content',
-    transclude: {
-        content: '?content'
+app.component('eventsItem', {
+    templateUrl: 'events.html',
+    controllerAs: 'events',
+    bindings: {
+        img: '@',
+        heading: '@'
     },
-    bindings: {},
     controller: function controller($element, $timeout) {
 
         var init = function init() {};
@@ -98,13 +98,13 @@ app.component('contentItem', {
     }
 });
 
-app.component('eventsItem', {
-    templateUrl: 'events.html',
-    controllerAs: 'events',
-    bindings: {
-        img: '@',
-        heading: '@'
+app.component('contentItem', {
+    templateUrl: 'content.html',
+    controllerAs: 'content',
+    transclude: {
+        content: '?content'
     },
+    bindings: {},
     controller: function controller($element, $timeout) {
 
         var init = function init() {};
@@ -135,9 +135,9 @@ app.component('headerItem', {
     }
 });
 
-app.component('linksItem', {
-    templateUrl: 'links.html',
-    controllerAs: 'links',
+app.component('heroItem', {
+    templateUrl: 'hero.html',
+    controllerAs: 'hero',
     bindings: {
         img: '@',
         heading: '@'
@@ -152,9 +152,9 @@ app.component('linksItem', {
     }
 });
 
-app.component('heroItem', {
-    templateUrl: 'hero.html',
-    controllerAs: 'hero',
+app.component('linksItem', {
+    templateUrl: 'links.html',
+    controllerAs: 'links',
     bindings: {
         img: '@',
         heading: '@'
@@ -237,7 +237,7 @@ app.component('twitterItem', {
     }
 });
 
-app.controller('AboutScreen', function ($element, $timeout, $scope) {
+app.controller('HomeScreen', function ($element, $timeout, $scope) {
 
     var init = function init() {
         //$timeout(() => $element.find('[screen]').addClass('active'), 50);
@@ -248,7 +248,7 @@ app.controller('AboutScreen', function ($element, $timeout, $scope) {
     _.extend($scope, {});
 });
 
-app.controller('HomeScreen', function ($element, $timeout, $scope) {
+app.controller('AboutScreen', function ($element, $timeout, $scope) {
 
     var init = function init() {
         //$timeout(() => $element.find('[screen]').addClass('active'), 50);

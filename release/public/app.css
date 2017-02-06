@@ -144,22 +144,6 @@ p {
     -ms-flex-item-align: end;
         align-self: flex-end; }
 
-content-item .content {
-  font-size: 16px;
-  font-weight: 300; }
-  content-item .content h1, content-item .content h2, content-item .content h3, content-item .content h4, content-item .content p {
-    margin: 10px 0 0;
-    padding: 10px 0 0; }
-  content-item .content h1 {
-    font-size: 40px;
-    font-weight: 100; }
-  content-item .content p {
-    font-size: 16px;
-    font-weight: 300; }
-    content-item .content p a {
-      font-weight: 600;
-      color: #4b7d3c; }
-
 events-item .events .event {
   padding: 15px 0;
   margin: 0 15px;
@@ -180,6 +164,22 @@ events-item .events .event {
       font-size: 23px; }
   events-item .events .event p {
     margin-top: 5px; }
+
+content-item .content {
+  font-size: 16px;
+  font-weight: 300; }
+  content-item .content h1, content-item .content h2, content-item .content h3, content-item .content h4, content-item .content p {
+    margin: 10px 0 0;
+    padding: 10px 0 0; }
+  content-item .content h1 {
+    font-size: 40px;
+    font-weight: 100; }
+  content-item .content p {
+    font-size: 16px;
+    font-weight: 300; }
+    content-item .content p a {
+      font-weight: 600;
+      color: #4b7d3c; }
 
 header-item .header {
   position: absolute;
@@ -260,19 +260,6 @@ header-item .header {
         padding: 0 15px;
         outline: none; }
 
-links-item .links .link {
-  padding: 15px 0;
-  margin: 0 15px;
-  border-bottom: 3px solid #e4e8eb; }
-  links-item .links .link:last-child {
-    border: none; }
-  links-item .links .link .link-icon {
-    margin-right: 15px; }
-    links-item .links .link .link-icon img {
-      height: 20px; }
-  links-item .links .link p {
-    margin-top: 5px; }
-
 hero-item .hero {
   position: relative;
   box-shadow: 0 15px 75px rgba(23, 55, 87, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
@@ -319,6 +306,19 @@ hero-item .hero {
       color: white;
       font-family: 'Oswald', sans-serif;
       font-size: 30px; }
+
+links-item .links .link {
+  padding: 15px 0;
+  margin: 0 15px;
+  border-bottom: 3px solid #e4e8eb; }
+  links-item .links .link:last-child {
+    border: none; }
+  links-item .links .link .link-icon {
+    margin-right: 15px; }
+    links-item .links .link .link-icon img {
+      height: 20px; }
+  links-item .links .link p {
+    margin-top: 5px; }
 
 media-item .media {
   margin: -5px; }
