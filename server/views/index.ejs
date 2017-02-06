@@ -29,6 +29,13 @@
 <div ui-view></div>
 
 
+<script type="text/ng-template" id="content.html">
+    <div class="content">
+        <div class="container">
+            <div ng-transclude="content"></div>
+        </div>
+    </div>
+</script>
 <script type="text/ng-template" id="events.html">
     <div class="box box-gap">
         <div class="events flex">
@@ -69,13 +76,6 @@
         </div>
     </div>
 
-</script>
-<script type="text/ng-template" id="content.html">
-    <div class="content">
-        <div class="container">
-            <div ng-transclude="content"></div>
-        </div>
-    </div>
 </script>
 <script type="text/ng-template" id="header.html">
     <div class="header">
@@ -120,18 +120,18 @@
     <div class="container">
         <div class="hero">
             <div class="flex flex-row flex-wrap-mob">
-                <div class="hero-banner" style="background-image: url('https://source.unsplash.com/category/nature/1200/500/?random');">
+                <div class="hero-banner" style="background-image: url('https://source.unsplash.com/category/nature/1200x500');">
                     <div class="banner-overlay">
                         Aspernatur ea magni nulla officiis
                     </div>
                 </div>
                 <div class="flex">
-                    <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x500?2')">
+                    <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x501')">
                         <div class="banner-overlay">
                             Inventore obcaecati provident
                         </div>
                     </div>
-                    <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x500?3')">
+                    <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x502')">
                         <div class="banner-overlay">
                             Fulit maxime sunt
                         </div>
@@ -198,48 +198,13 @@
 <script type="text/ng-template" id="media.html">
     <div class="box box-gap">
         <div class="box-content media flex flex-row flex-wrap">
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x500?100');"></div>
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x500?101');"></div>
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x500?102');"></div>
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x500?103');"></div>
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x500?104');"></div>
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x500?105');"></div>
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x500?106');"></div>
-        </div>
-    </div>
-
-</script>
-<script type="text/ng-template" id="news.html">
-    <div class="news">
-        <div class="container">
-            <div class="flex flex-row flex-wrap box-container">
-
-                <div class="box box-margin box-clickable" style="min-width: 300px">
-                    <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x500?4')"></div>
-                    <div class="box-content">
-                        <h3>Aspernatur ea magni nulla officiis.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
-                    </div>
-                </div>
-
-                <div class="box box-margin box-clickable" style="min-width: 300px">
-                    <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x500?5')"></div>
-                    <div class="box-content">
-                        <h3>Inventore obcaecati provident suscipit.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
-                    </div>
-                </div>
-
-                <div class="box box-margin box-clickable" style="min-width: 300px">
-                    <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x500?6')"></div>
-                    <div class="box-content">
-                        <h3>Fulit maxime sunt</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
-                    </div>
-                </div>
-
-            </div>
-
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x600');"></div>
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x601');"></div>
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x602');"></div>
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x603');"></div>
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x604');"></div>
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x605');"></div>
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x606');"></div>
         </div>
     </div>
 
@@ -294,6 +259,41 @@
         </div>
     </div>
 </script>
+<script type="text/ng-template" id="news.html">
+    <div class="news">
+        <div class="container">
+            <div class="flex flex-row flex-wrap box-container">
+
+                <div class="box box-margin box-clickable" style="min-width: 300px">
+                    <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x512')"></div>
+                    <div class="box-content">
+                        <h3>Aspernatur ea magni nulla officiis.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
+                    </div>
+                </div>
+
+                <div class="box box-margin box-clickable" style="min-width: 300px">
+                    <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x511')"></div>
+                    <div class="box-content">
+                        <h3>Inventore obcaecati provident suscipit.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
+                    </div>
+                </div>
+
+                <div class="box box-margin box-clickable" style="min-width: 300px">
+                    <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x510')"></div>
+                    <div class="box-content">
+                        <h3>Fulit maxime sunt</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</script>
 <script type="text/ng-template" id="twitter.html">
     <div class="box box-gap">
         <div class="twitter flex">
@@ -329,6 +329,16 @@
     </div>
 
 </script>
+<script type="text/ng-template" id="about-screen.html">
+    <div screen="about">
+
+        <!-- one way pass values to component -->
+        <hero-item
+                img="https://source.unsplash.com/category/nature/1200/500/?random&123"
+                heading="About Angular Base"
+        ></hero-item>
+    </div>
+</script>
 <script type="text/ng-template" id="home-screen.html">
     <div screen="home">
 
@@ -361,16 +371,6 @@
 
         </div>
 
-    </div>
-</script>
-<script type="text/ng-template" id="about-screen.html">
-    <div screen="about">
-
-        <!-- one way pass values to component -->
-        <hero-item
-                img="https://source.unsplash.com/category/nature/1200/500/?random&123"
-                heading="About Angular Base"
-        ></hero-item>
     </div>
 </script>
 <script src="public/lib.js"></script>
