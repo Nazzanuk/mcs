@@ -115,23 +115,6 @@ app.component('eventsItem', {
     }
 });
 
-app.component('heroItem', {
-    templateUrl: 'hero.html',
-    controllerAs: 'hero',
-    bindings: {
-        img: '@',
-        heading: '@'
-    },
-    controller: function controller($element, $timeout) {
-
-        var init = function init() {};
-
-        init();
-
-        _.extend(this, {});
-    }
-});
-
 app.component('headerItem', {
     templateUrl: 'header.html',
     controllerAs: 'header',
@@ -155,6 +138,23 @@ app.component('headerItem', {
 app.component('linksItem', {
     templateUrl: 'links.html',
     controllerAs: 'links',
+    bindings: {
+        img: '@',
+        heading: '@'
+    },
+    controller: function controller($element, $timeout) {
+
+        var init = function init() {};
+
+        init();
+
+        _.extend(this, {});
+    }
+});
+
+app.component('heroItem', {
+    templateUrl: 'hero.html',
+    controllerAs: 'hero',
     bindings: {
         img: '@',
         heading: '@'
