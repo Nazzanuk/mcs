@@ -4,17 +4,22 @@ $secondary: #e2d89c;
 $light: #e4e8eb;
 
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'Mada', sans-serif;
   overflow-x: hidden;
   background: lighten($light, 5%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 13px;
+
+  direction: rtl;
+  min-width: 320px;
 }
 
 input, textarea {
   -webkit-font-smoothing: antialiased;
-  font-family: 'Roboto', sans-serif;
+  //font-family: 'Mada', sans-serif;
+
+  font-family: 'Roboto', 'Mada', sans-serif;
 }
 
 body {
@@ -52,10 +57,18 @@ body {
   &.active {
     opacity: 1;
   }
+
+  @include mobile {
+    padding-top: 40px;
+  }
+
+  @include tablet {
+    padding-top: 40px;
+  }
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', 'Mada', sans-serif;
   margin: 15px 0 0;
 
   &:first-child {
@@ -75,6 +88,24 @@ p {
   }
 }
 
+.gap-remove-mobile {
+  margin-top: -30px;
+  @include mobile {
+    margin-top: 0px;
+  }
+}
+
+.gap-remove-tablet {
+  margin-top: -30px;
+
+  @include tablet {
+    margin-top: 0px;
+  }
+  @include mobile {
+    margin-top: 0px;
+  }
+}
+
 .section-title {
   line-height: 35px;
   padding: 0 15px;
@@ -82,6 +113,7 @@ p {
   box-shadow: 0 15px 75px rgba(23, 55, 87, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   display: inline-block;
   border-radius: 3px;
+  margin-top: 30px;
 }
 
 .section {
@@ -110,7 +142,7 @@ p {
   //margin-top: 30px;
   height: 35px;
   //padding-top: 30px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', 'Mada', sans-serif;
   font-size: 16px;
   //border-radius: 3px 3px 0 0;
   //overflow: hidden;
@@ -164,12 +196,12 @@ p {
     }
   }
 
-  &.box-gap {
-    margin-top: 30px;
-  }
-
   &.box-margin {
     margin: 15px;
+  }
+
+  &.box-gap {
+    margin-top: 30px;
   }
 
   .box-image {

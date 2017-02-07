@@ -22,18 +22,6 @@ hero-item {
       border-left: 2px solid white;
 
 
-      &.small {
-        height: 175px;
-
-        .banner-overlay {
-          font-size: 20px;
-        }
-      }
-
-      @include mobile {
-        height: 200px;
-      }
-
       .banner-overlay {
         position: absolute;
         //top: 0;
@@ -52,8 +40,24 @@ hero-item {
         justify-items: center;
         color: white;
 
-        font-family: 'Oswald', sans-serif;
-        font-size: 30px;
+        font-family: 'Oswald', 'Mada', sans-serif;
+        font-size: 35px;
+      }
+
+      &.small {
+        height: 175px;
+
+        .banner-overlay {
+          font-size: 20px;
+        }
+      }
+
+      @include mobile {
+        height: 175px;
+
+        .banner-overlay {
+          font-size: 20px;
+        }
       }
     }
   }

@@ -169,6 +169,23 @@ app.component('linksItem', {
     }
 });
 
+app.component('newsItem', {
+    templateUrl: 'news.html',
+    controllerAs: 'news',
+    bindings: {
+        img: '@',
+        heading: '@'
+    },
+    controller: function controller($element, $timeout) {
+
+        var init = function init() {};
+
+        init();
+
+        _.extend(this, {});
+    }
+});
+
 app.component('mediaItem', {
     templateUrl: 'media.html',
     controllerAs: 'media',
@@ -189,23 +206,6 @@ app.component('mediaItem', {
 app.component('servicesItem', {
     templateUrl: 'services.html',
     controllerAs: 'services',
-    bindings: {
-        img: '@',
-        heading: '@'
-    },
-    controller: function controller($element, $timeout) {
-
-        var init = function init() {};
-
-        init();
-
-        _.extend(this, {});
-    }
-});
-
-app.component('newsItem', {
-    templateUrl: 'news.html',
-    controllerAs: 'news',
     bindings: {
         img: '@',
         heading: '@'

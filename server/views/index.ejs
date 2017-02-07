@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="public/app.css"/>
 
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mada:300,400,500,900&amp;subset=arabic" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
@@ -78,37 +79,79 @@
 
 </script>
 <script type="text/ng-template" id="header.html">
+    <!--<div class="mobile-menu hidden-md hidden-lg">-->
+
+        <!--<div class="menu-box">-->
+
+            <!--<div class="menu-bar flex flex-row">-->
+                <!--<div class="close-menu">-->
+                    <!--<i class="fa fa-times"></i>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="menu-items">-->
+                <!--<div class="menu-item">قائمة طعام</div>-->
+                <!--<div class="menu-item">دليل الاتصالات</div>-->
+                <!--<div class="menu-item">السياسات والإجراءات</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+
     <div class="header">
-        <div class="header-top">
+        <div class="header-mobile visible-xs visible-sm">
+            <div class="container">
+
+
+                <div class="header-menu">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+                <div style="margin: auto"></div>
+
+                <div class="menu-logo">وزارة الخدمة المدنية</div>
+            </div>
+
+        </div>
+
+        <div class="header-top hidden-sm hidden-xs">
             <div class="container">
                 <div class="menu-items">
-                    <div class="menu-item">Menu <i class="fa fa-angle-down"></i></div>
-                    <div class="menu-item">Communication Guide</div>
-                    <div class="menu-item">Policies and Procedures</div>
+                    <div class="menu-item">قائمة طعام <i class="fa fa-angle-down"></i></div>
+                    <div class="menu-item">دليل الاتصالات</div>
+                    <div class="menu-item">السياسات والإجراءات</div>
                 </div>
-                <div class="menu-items" style="margin-left: auto">
-                    <div class="menu-item">Favourites <i class="fa fa-angle-down"></i></div>
-                    <div class="menu-item">Preferences <i class="fa fa-angle-down"></i></div>
-                    <div class="menu-item"><i class="fa fa-user"></i> &nbsp; Muhamed Taki</div>
+
+                <div style="margin: auto"></div>
+
+                <div class="menu-items">
+                    <div class="menu-item">مفضلة <i class="fa fa-angle-down"></i></div>
+                    <div class="menu-item">التفضيلات <i class="fa fa-angle-down"></i></div>
+                    <div class="menu-item"><i class="fa fa-user"></i> &nbsp; محمد تقي</div>
                 </div>
 
             </div>
 
         </div>
 
-        <div class="header-bottom">
+        <div class="header-bottom hidden-sm hidden-xs">
             <div class="container">
                 <div class="header-logo">
                     <img src="/public/img/logo.jpg" alt="Logo">
                 </div>
 
+
                 <div>
-                    <div class="header-title">Ministry of Civil Services</div>
+                    <div class="header-title">وزارة الخدمة المدنية</div>
+                    <!--<div class="header-title">Ministry of Civil Services</div>-->
                     <!--<div class="header-section">Human Resources</div>-->
                 </div>
 
+                <div style="margin: auto"></div>
+
                 <div class="header-search">
-                    <input type="search" class="header-search" placeholder="Search">
+                    <input type="search" class="header-search" placeholder="بحث">
                 </div>
             </div>
 
@@ -121,20 +164,14 @@
         <div class="hero">
             <div class="flex flex-row flex-wrap-mob">
                 <div class="hero-banner" style="background-image: url('https://source.unsplash.com/category/nature/1200x500');">
-                    <div class="banner-overlay">
-                        Aspernatur ea magni nulla officiis
-                    </div>
+                    <div class="banner-overlay">وترفض أي مكاتب كبيرة</div>
                 </div>
                 <div class="flex">
                     <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x501')">
-                        <div class="banner-overlay">
-                            Inventore obcaecati provident
-                        </div>
+                        <div class="banner-overlay">أعمى من جانب الادخار</div>
                     </div>
                     <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x502')">
-                        <div class="banner-overlay">
-                            Fulit maxime sunt
-                        </div>
+                        <div class="banner-overlay">لقب يذهب هنا</div>
                     </div>
                 </div>
 
@@ -195,6 +232,41 @@
     </div>
 
 </script>
+<script type="text/ng-template" id="news.html">
+    <div class="news">
+        <div class="container">
+            <div class="flex flex-row flex-wrap box-container">
+
+                <div class="box box-margin box-clickable" style="min-width: 300px">
+                    <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x512')"></div>
+                    <div class="box-content">
+                        <h3>وترفض أي مكاتب كبيرة</h3>
+                        <p>بـ إعادة أعمال إيو, إنطلاق تكاليف المعاهدات ثم ذلك. وإعلان بالتوقيع الخارجية أخر و</p>
+                    </div>
+                </div>
+
+                <div class="box box-margin box-clickable" style="min-width: 300px">
+                    <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x511')"></div>
+                    <div class="box-content">
+                        <h3>أعمى من جانب الادخار</h3>
+                        <p>بـ إعادة أعمال إيو, إنطلاق تكاليف المعاهدات ثم ذلك. وإعلان بالتوقيع الخارجية أخر و</p>
+                    </div>
+                </div>
+
+                <div class="box box-margin box-clickable" style="min-width: 300px">
+                    <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x510')"></div>
+                    <div class="box-content">
+                        <h3>لقب يذهب هنا</h3>
+                        <p>بـ إعادة أعمال إيو, إنطلاق تكاليف المعاهدات ثم ذلك. وإعلان بالتوقيع الخارجية أخر و</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</script>
 <script type="text/ng-template" id="media.html">
     <div class="box box-gap">
         <div class="box-content media flex flex-row flex-wrap">
@@ -212,87 +284,52 @@
 <script type="text/ng-template" id="services.html">
     <div class="container">
         <div class="services">
-            <div class="flex flex-row">
-                <div class="service flex flex-align flex-justify">
+            <div class="flex flex-row flex-wrap-mob">
+                <div class="service flex flex-auto flex-align flex-justify">
                     <div class="service-icon flex">
                         <img src="/public/svg/shapes-1.svg" alt="">
                     </div>
-                    <div class="service-text">Services</div>
+                    <div class="service-text">خدمات</div>
                 </div>
 
-                <div class="service flex flex-align flex-justify">
+                <div class="service flex flex-auto flex-align flex-justify">
                     <div class="service-icon flex">
                         <img src="/public/svg/arrow.svg" alt="">
                     </div>
-                    <div class="service-text">External Services</div>
+                    <div class="service-text">الخدمات الخارجية</div>
                 </div>
 
-                <div class="service flex flex-align flex-justify">
+                <div class="service flex flex-auto flex-align flex-justify">
                     <div class="service-icon flex">
                         <img src="/public/svg/photo.svg" alt="">
                     </div>
-                    <div class="service-text">Media Gallery</div>
+                    <div class="service-text">معرض الوسائط</div>
                 </div>
 
-                <div class="service flex flex-align flex-justify">
+                <div class="service flex flex-auto flex-align flex-justify">
                     <div class="service-icon flex">
                         <img src="/public/svg/time.svg" alt="">
                         </div>
-                    <div class="service-text">Activities</div>
+                    <div class="service-text">أنشطة</div>
                 </div>
 
-                <div class="service flex flex-align flex-justify">
+                <div class="service flex flex-auto flex-align flex-justify">
                     <div class="service-icon flex">
                         <img src="/public/svg/folder.svg" alt="">
                     </div>
-                    <div class="service-text">Documents</div>
+                    <div class="service-text">مستندات</div>
                 </div>
 
-                <div class="service flex flex-align flex-justify">
+                <div class="service flex flex-auto flex-align flex-justify">
                     <div class="service-icon flex">
                         <img src="/public/svg/business.svg" alt="">
                     </div>
-                    <div class="service-text">Profile</div>
+                    <div class="service-text">الملف الشخصي</div>
                 </div>
 
             </div>
         </div>
     </div>
-</script>
-<script type="text/ng-template" id="news.html">
-    <div class="news">
-        <div class="container">
-            <div class="flex flex-row flex-wrap box-container">
-
-                <div class="box box-margin box-clickable" style="min-width: 300px">
-                    <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x512')"></div>
-                    <div class="box-content">
-                        <h3>Aspernatur ea magni nulla officiis.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
-                    </div>
-                </div>
-
-                <div class="box box-margin box-clickable" style="min-width: 300px">
-                    <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x511')"></div>
-                    <div class="box-content">
-                        <h3>Inventore obcaecati provident suscipit.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
-                    </div>
-                </div>
-
-                <div class="box box-margin box-clickable" style="min-width: 300px">
-                    <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x510')"></div>
-                    <div class="box-content">
-                        <h3>Fulit maxime sunt</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quis quisquam repellat sapiente? Aliquid assumenda blanditiis eligendi labore tempore voluptatum.</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
 </script>
 <script type="text/ng-template" id="twitter.html">
     <div class="box box-gap">
@@ -303,7 +340,7 @@
                     <i class="fa fa-twitter"></i>
                 </div>
                 <div class="flex flex-justify">
-                    <p>Deleniti esse est et fugiat iste minus mollitia. Alias amet asperiores doloribus dolorum, mollitia quasi quis voluptatem.</p>
+                    <p>هناك أقل من ضعف منه، وتتهرب من ذلك. خلاف ذلك، والكثير من الآلام لتجنب آلام أسوأ، والضعف، مثل أي متعة.</p>
                 </div>
             </div>
 
@@ -312,7 +349,7 @@
                     <i class="fa fa-twitter"></i>
                 </div>
                 <div class="flex flex-justify">
-                    <p>At doloremque doloribus dolorum eius est eveniet, explicabo incidunt minus natus quam qui quia quidem quo, ratione saepe sapiente veniam. Error, ex!</p>
+                    <p>ولكن الألم كان آلام مبرحة في وصيته، وشرح للسقوط أقل من ذلك الذي ولدت فيه، غالبا ما يكون العفو الحكمة. خطأ خارجا!</p>
                 </div>
             </div>
 
@@ -321,7 +358,7 @@
                     <i class="fa fa-twitter"></i>
                 </div>
                 <div class="flex flex-justify">
-                    <p>Ab accusamus aliquid, cum cumque et exercitationem fuga, in iste nostrum perferendis sequi sunt suscipit vel vero!</p>
+                    <p>ويتهم شيء من، مع ولأن كلا من ممارسة الرحلة، أو لمتابعة له في هذا، ولكن، لدينا دائم!</p>
                 </div>
             </div>
 
@@ -358,11 +395,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
-                        <h3 class="section-title">Latest Media</h3>
+                        <h3 class="section-title">أحدث وسائل الإعلام</h3>
                         <media-item></media-item>
                     </div>
                     <div class="col-md-4">
-                        <h3 class="section-title">Twitter</h3>
+                        <div class="gap-remove-tablet"></div>
+                        <h3 class="section-title">تغريد</h3>
                         <twitter-item></twitter-item>
                     </div>
                 </div>

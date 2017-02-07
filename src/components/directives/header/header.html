@@ -1,35 +1,77 @@
 <script type="text/ng-template" id="header.html">
+    <!--<div class="mobile-menu hidden-md hidden-lg">-->
+
+        <!--<div class="menu-box">-->
+
+            <!--<div class="menu-bar flex flex-row">-->
+                <!--<div class="close-menu">-->
+                    <!--<i class="fa fa-times"></i>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="menu-items">-->
+                <!--<div class="menu-item">قائمة طعام</div>-->
+                <!--<div class="menu-item">دليل الاتصالات</div>-->
+                <!--<div class="menu-item">السياسات والإجراءات</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+
     <div class="header">
-        <div class="header-top">
+        <div class="header-mobile visible-xs visible-sm">
+            <div class="container">
+
+
+                <div class="header-menu">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+                <div style="margin: auto"></div>
+
+                <div class="menu-logo">وزارة الخدمة المدنية</div>
+            </div>
+
+        </div>
+
+        <div class="header-top hidden-sm hidden-xs">
             <div class="container">
                 <div class="menu-items">
-                    <div class="menu-item">Menu <i class="fa fa-angle-down"></i></div>
-                    <div class="menu-item">Communication Guide</div>
-                    <div class="menu-item">Policies and Procedures</div>
+                    <div class="menu-item">قائمة طعام <i class="fa fa-angle-down"></i></div>
+                    <div class="menu-item">دليل الاتصالات</div>
+                    <div class="menu-item">السياسات والإجراءات</div>
                 </div>
-                <div class="menu-items" style="margin-left: auto">
-                    <div class="menu-item">Favourites <i class="fa fa-angle-down"></i></div>
-                    <div class="menu-item">Preferences <i class="fa fa-angle-down"></i></div>
-                    <div class="menu-item"><i class="fa fa-user"></i> &nbsp; Muhamed Taki</div>
+
+                <div style="margin: auto"></div>
+
+                <div class="menu-items">
+                    <div class="menu-item">مفضلة <i class="fa fa-angle-down"></i></div>
+                    <div class="menu-item">التفضيلات <i class="fa fa-angle-down"></i></div>
+                    <div class="menu-item"><i class="fa fa-user"></i> &nbsp; محمد تقي</div>
                 </div>
 
             </div>
 
         </div>
 
-        <div class="header-bottom">
+        <div class="header-bottom hidden-sm hidden-xs">
             <div class="container">
                 <div class="header-logo">
                     <img src="/public/img/logo.jpg" alt="Logo">
                 </div>
 
+
                 <div>
-                    <div class="header-title">Ministry of Civil Services</div>
+                    <div class="header-title">وزارة الخدمة المدنية</div>
+                    <!--<div class="header-title">Ministry of Civil Services</div>-->
                     <!--<div class="header-section">Human Resources</div>-->
                 </div>
 
+                <div style="margin: auto"></div>
+
                 <div class="header-search">
-                    <input type="search" class="header-search" placeholder="Search">
+                    <input type="search" class="header-search" placeholder="بحث">
                 </div>
             </div>
 

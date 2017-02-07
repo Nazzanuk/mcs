@@ -1,4 +1,54 @@
 header-item {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3000;
+    background: rgba(0,0,0,0.2);
+
+    .menu-box {
+      width: 300px;
+      background: white;
+      box-shadow: 0 15px 75px rgba(23, 55, 87, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+
+      .menu-bar {
+        height: 40px;
+        background: $secondary;
+        color: $body;
+
+        .close-menu {
+          height: 40px;
+          width: 40px;
+          font-size: 20px;
+
+          cursor: pointer;
+
+          .fa {
+            width: 40px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .menu-items {
+        margin-bottom: -1px;
+
+        .menu-item {
+          height: 40px;
+          line-height: 39px;
+          padding: 0 15px;
+          font-size: 17px;
+          border-bottom:1px solid $light;
+        }
+      }
+    }
+  }
+
+
   .header {
     position: absolute;
     position: fixed;
@@ -21,6 +71,25 @@ header-item {
       }
     }
 
+    .header-mobile {
+      height: 40px;
+      line-height: 40px;
+      background: $primary;
+      color: white;
+
+      .menu-logo {
+        font-size: 19px;
+      }
+
+      .header-menu {
+        height: 40px;
+        width: 40px;
+        font-size: 25px;
+
+        cursor: pointer;
+      }
+    }
+
     .header-top {
       height: 30px;
       display: flex;
@@ -37,15 +106,19 @@ header-item {
         line-height: 35px;
         height: 35px;
 
+        @include mobile {
+          display: none;
+        }
+
         .menu-item {
           padding: 0 10px;
-          border-left: 1px solid rgba(255, 255, 255, 0.2);
+          border-right: 1px solid rgba(255, 255, 255, 0.2);
           transition: .3s;
           cursor: pointer;
-          font-weight: 600;
+          //font-weight: 600;
 
           &:last-child {
-            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
           }
 
           &:hover {
@@ -67,12 +140,13 @@ header-item {
         height: 60px;
         width: auto;
         margin-right: 15px;
+        margin-left: 15px;
       }
 
       .header-title {
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Oswald', 'Mada', sans-serif;
         color: $primary;
-        font-size: 20px;
+        font-size: 28px;
         //font-weight: 700;
       }
 
@@ -81,7 +155,6 @@ header-item {
       }
 
       .header-search {
-        margin-left: auto;
 
         input {
           border: none;
