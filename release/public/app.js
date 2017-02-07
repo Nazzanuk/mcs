@@ -135,23 +135,6 @@ app.component('headerItem', {
     }
 });
 
-app.component('heroItem', {
-    templateUrl: 'hero.html',
-    controllerAs: 'hero',
-    bindings: {
-        img: '@',
-        heading: '@'
-    },
-    controller: function controller($element, $timeout) {
-
-        var init = function init() {};
-
-        init();
-
-        _.extend(this, {});
-    }
-});
-
 app.component('linksItem', {
     templateUrl: 'links.html',
     controllerAs: 'links',
@@ -169,9 +152,9 @@ app.component('linksItem', {
     }
 });
 
-app.component('newsItem', {
-    templateUrl: 'news.html',
-    controllerAs: 'news',
+app.component('heroItem', {
+    templateUrl: 'hero.html',
+    controllerAs: 'hero',
     bindings: {
         img: '@',
         heading: '@'
@@ -189,6 +172,23 @@ app.component('newsItem', {
 app.component('mediaItem', {
     templateUrl: 'media.html',
     controllerAs: 'media',
+    bindings: {
+        img: '@',
+        heading: '@'
+    },
+    controller: function controller($element, $timeout) {
+
+        var init = function init() {};
+
+        init();
+
+        _.extend(this, {});
+    }
+});
+
+app.component('newsItem', {
+    templateUrl: 'news.html',
+    controllerAs: 'news',
     bindings: {
         img: '@',
         heading: '@'
@@ -237,7 +237,7 @@ app.component('twitterItem', {
     }
 });
 
-app.controller('AboutScreen', function ($element, $timeout, $scope) {
+app.controller('HomeScreen', function ($element, $timeout, $scope) {
 
     var init = function init() {
         //$timeout(() => $element.find('[screen]').addClass('active'), 50);
@@ -248,7 +248,7 @@ app.controller('AboutScreen', function ($element, $timeout, $scope) {
     _.extend($scope, {});
 });
 
-app.controller('HomeScreen', function ($element, $timeout, $scope) {
+app.controller('AboutScreen', function ($element, $timeout, $scope) {
 
     var init = function init() {
         //$timeout(() => $element.find('[screen]').addClass('active'), 50);

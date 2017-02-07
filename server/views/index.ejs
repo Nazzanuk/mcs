@@ -159,26 +159,6 @@
 
     </div>
 </script>
-<script type="text/ng-template" id="hero.html">
-    <div class="container">
-        <div class="hero">
-            <div class="flex flex-row flex-wrap-mob">
-                <div class="hero-banner" style="background-image: url('https://source.unsplash.com/category/nature/1200x500');">
-                    <div class="banner-overlay">وترفض أي مكاتب كبيرة</div>
-                </div>
-                <div class="flex">
-                    <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x501')">
-                        <div class="banner-overlay">أعمى من جانب الادخار</div>
-                    </div>
-                    <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x502')">
-                        <div class="banner-overlay">لقب يذهب هنا</div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</script>
 <script type="text/ng-template" id="links.html">
     <div class="box box-gap">
         <div class="links flex">
@@ -232,6 +212,40 @@
     </div>
 
 </script>
+<script type="text/ng-template" id="hero.html">
+    <div class="container">
+        <div class="hero">
+            <div class="flex flex-row flex-wrap-mob">
+                <div class="hero-banner" style="background-image: url('https://source.unsplash.com/category/nature/1200x500');">
+                    <div class="banner-overlay">وترفض أي مكاتب كبيرة</div>
+                </div>
+                <div class="flex">
+                    <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x501')">
+                        <div class="banner-overlay">أعمى من جانب الادخار</div>
+                    </div>
+                    <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x502')">
+                        <div class="banner-overlay">لقب يذهب هنا</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/ng-template" id="media.html">
+    <div class="box box-gap">
+        <div class="box-content media flex flex-row flex-wrap">
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x600');"></div>
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x601');"></div>
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x602');"></div>
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x603');"></div>
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x604');"></div>
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x605');"></div>
+            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x606');"></div>
+        </div>
+    </div>
+
+</script>
 <script type="text/ng-template" id="news.html">
     <div class="news">
         <div class="container">
@@ -263,20 +277,6 @@
 
             </div>
 
-        </div>
-    </div>
-
-</script>
-<script type="text/ng-template" id="media.html">
-    <div class="box box-gap">
-        <div class="box-content media flex flex-row flex-wrap">
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x600');"></div>
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x601');"></div>
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x602');"></div>
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x603');"></div>
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x604');"></div>
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x605');"></div>
-            <div class="media-item" style="background-image: url('https://source.unsplash.com/category/nature/1200x606');"></div>
         </div>
     </div>
 
@@ -366,16 +366,6 @@
     </div>
 
 </script>
-<script type="text/ng-template" id="about-screen.html">
-    <div screen="about">
-
-        <!-- one way pass values to component -->
-        <hero-item
-                img="https://source.unsplash.com/category/nature/1200/500/?random&123"
-                heading="About Angular Base"
-        ></hero-item>
-    </div>
-</script>
 <script type="text/ng-template" id="home-screen.html">
     <div screen="home">
 
@@ -409,6 +399,16 @@
 
         </div>
 
+    </div>
+</script>
+<script type="text/ng-template" id="about-screen.html">
+    <div screen="about">
+
+        <!-- one way pass values to component -->
+        <hero-item
+                img="https://source.unsplash.com/category/nature/1200/500/?random&123"
+                heading="About Angular Base"
+        ></hero-item>
     </div>
 </script>
 <script src="public/lib.js"></script>
