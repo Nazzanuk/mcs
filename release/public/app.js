@@ -203,9 +203,9 @@ app.component('newsItem', {
     }
 });
 
-app.component('servicesItem', {
-    templateUrl: 'services.html',
-    controllerAs: 'services',
+app.component('twitterItem', {
+    templateUrl: 'twitter.html',
+    controllerAs: 'twitter',
     bindings: {
         img: '@',
         heading: '@'
@@ -220,9 +220,9 @@ app.component('servicesItem', {
     }
 });
 
-app.component('twitterItem', {
-    templateUrl: 'twitter.html',
-    controllerAs: 'twitter',
+app.component('servicesItem', {
+    templateUrl: 'services.html',
+    controllerAs: 'services',
     bindings: {
         img: '@',
         heading: '@'
@@ -259,7 +259,7 @@ app.controller('ContentScreen', function ($element, $timeout, $scope) {
     _.extend($scope, {});
 });
 
-app.controller('HomeScreen', function ($element, $timeout, $scope) {
+app.controller('Content2Screen', function ($element, $timeout, $scope) {
 
     var init = function init() {
         //$timeout(() => $element.find('[screen]').addClass('active'), 50);
@@ -270,7 +270,7 @@ app.controller('HomeScreen', function ($element, $timeout, $scope) {
     _.extend($scope, {});
 });
 
-app.controller('Content2Screen', function ($element, $timeout, $scope) {
+app.controller('HomeScreen', function ($element, $timeout, $scope) {
 
     var init = function init() {
         //$timeout(() => $element.find('[screen]').addClass('active'), 50);
