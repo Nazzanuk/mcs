@@ -98,23 +98,6 @@ app.component('contentItem', {
     }
 });
 
-app.component('eventsItem', {
-    templateUrl: 'events.html',
-    controllerAs: 'events',
-    bindings: {
-        img: '@',
-        heading: '@'
-    },
-    controller: function controller($element, $timeout) {
-
-        var init = function init() {};
-
-        init();
-
-        _.extend(this, {});
-    }
-});
-
 app.component('headerItem', {
     templateUrl: 'header.html',
     controllerAs: 'header',
@@ -132,6 +115,23 @@ app.component('headerItem', {
             setPage: Menu.setPage,
             isCurrentPage: Menu.isCurrentPage
         });
+    }
+});
+
+app.component('eventsItem', {
+    templateUrl: 'events.html',
+    controllerAs: 'events',
+    bindings: {
+        img: '@',
+        heading: '@'
+    },
+    controller: function controller($element, $timeout) {
+
+        var init = function init() {};
+
+        init();
+
+        _.extend(this, {});
     }
 });
 

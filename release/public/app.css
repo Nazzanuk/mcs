@@ -192,27 +192,6 @@ content-item .content {
       font-weight: 600;
       color: #4b7d3c; }
 
-events-item .events .event {
-  padding: 15px 0;
-  margin: 0 15px;
-  border-bottom: 3px solid #e4e8eb; }
-  events-item .events .event:last-child {
-    border: none; }
-  events-item .events .event .event-date {
-    background: #4b7d3c;
-    color: white;
-    height: 60px;
-    min-width: 60px;
-    max-width: 60px;
-    border-radius: 3px;
-    margin-right: 15px;
-    text-align: center;
-    font-family: 'Oswald', sans-serif; }
-    events-item .events .event .event-date .number {
-      font-size: 23px; }
-  events-item .events .event p {
-    margin-top: 5px; }
-
 header-item .mobile-menu {
   position: fixed;
   top: 0;
@@ -340,6 +319,27 @@ header-item .header {
       padding: 0 15px;
       outline: none; }
 
+events-item .events .event {
+  padding: 15px 0;
+  margin: 0 15px;
+  border-bottom: 3px solid #e4e8eb; }
+  events-item .events .event:last-child {
+    border: none; }
+  events-item .events .event .event-date {
+    background: #4b7d3c;
+    color: white;
+    height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    border-radius: 3px;
+    margin-left: 15px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif; }
+    events-item .events .event .event-date .number {
+      font-size: 23px; }
+  events-item .events .event p {
+    margin-top: 5px; }
+
 hero-item .hero {
   position: relative;
   box-shadow: 0 15px 75px rgba(23, 55, 87, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
@@ -397,7 +397,7 @@ links-item .links .link {
   links-item .links .link:last-child {
     border: none; }
   links-item .links .link .link-icon {
-    margin-right: 15px; }
+    margin-left: 15px; }
     links-item .links .link .link-icon img {
       height: 20px; }
   links-item .links .link p {
