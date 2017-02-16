@@ -34,17 +34,24 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Oswald', 'Mada', sans-serif;
-  margin: 15px 0 0; }
+  margin: 20px 0 0; }
   h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
     margin: 0; }
+
+h1 {
+  line-height: 60px; }
 
 h3 {
   font-size: 16px; }
 
 p {
-  margin: 15px 0 0; }
+  margin: 20px 0 0; }
   p:first-child {
     margin: 0; }
+
+img {
+  max-width: 100%;
+  border-radius: 3px; }
 
 .gap-remove-mobile {
   margin-top: -30px; }
@@ -126,6 +133,7 @@ p {
     margin-top: 30px; }
   .box .box-image {
     height: 150px;
+    background: #eee;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; }
@@ -332,6 +340,19 @@ header-item .header {
       padding: 0 15px;
       outline: none; }
 
+links-item .links .link {
+  padding: 15px 0;
+  margin: 0 15px;
+  border-bottom: 3px solid #e4e8eb; }
+  links-item .links .link:last-child {
+    border: none; }
+  links-item .links .link .link-icon {
+    margin-right: 15px; }
+    links-item .links .link .link-icon img {
+      height: 20px; }
+  links-item .links .link p {
+    margin-top: 5px; }
+
 hero-item .hero {
   position: relative;
   box-shadow: 0 15px 75px rgba(23, 55, 87, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
@@ -349,11 +370,11 @@ hero-item .hero {
     background: #eee;
     background-size: cover;
     background-position: center;
-    height: 350px;
     border: 1px solid white;
     border-top: 2px solid white;
     border-left: 2px solid white;
-    min-height: 175px; }
+    min-height: 175px;
+    min-width: 250px; }
     hero-item .hero .hero-banner .banner-overlay {
       position: absolute;
       left: 0;
@@ -373,29 +394,14 @@ hero-item .hero {
       font-family: 'Oswald', 'Mada', sans-serif;
       font-size: 35px; }
     hero-item .hero .hero-banner.small {
-      min-height: 175px;
-      height: 175px; }
+      min-height: 175px; }
       hero-item .hero .hero-banner.small .banner-overlay {
         font-size: 20px; }
     @media (max-width: 767px) {
       hero-item .hero .hero-banner {
-        min-height: 175px;
-        height: 175px; }
+        min-height: 175px; }
         hero-item .hero .hero-banner .banner-overlay {
           font-size: 20px; } }
-
-links-item .links .link {
-  padding: 15px 0;
-  margin: 0 15px;
-  border-bottom: 3px solid #e4e8eb; }
-  links-item .links .link:last-child {
-    border: none; }
-  links-item .links .link .link-icon {
-    margin-right: 15px; }
-    links-item .links .link .link-icon img {
-      height: 20px; }
-  links-item .links .link p {
-    margin-top: 5px; }
 
 media-item .media {
   margin: -5px; }

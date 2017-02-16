@@ -33,7 +33,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise("/");
 
     // Now set up the states
-    $stateProvider.state(new Route('home', "/", resolve)).state(new Route('about', "/about", resolve));
+    $stateProvider.state(new Route('home', "/", resolve)).state(new Route('about', "/about", resolve)).state(new Route('content', "/content", resolve)).state(new Route('content-2', "/content-2", resolve));
 
     //use real urls instead of hashes
     //$locationProvider.html5Mode(true);
@@ -135,9 +135,9 @@ app.component('headerItem', {
     }
 });
 
-app.component('heroItem', {
-    templateUrl: 'hero.html',
-    controllerAs: 'hero',
+app.component('linksItem', {
+    templateUrl: 'links.html',
+    controllerAs: 'links',
     bindings: {
         img: '@',
         heading: '@'
@@ -152,9 +152,9 @@ app.component('heroItem', {
     }
 });
 
-app.component('linksItem', {
-    templateUrl: 'links.html',
-    controllerAs: 'links',
+app.component('heroItem', {
+    templateUrl: 'hero.html',
+    controllerAs: 'hero',
     bindings: {
         img: '@',
         heading: '@'
@@ -237,6 +237,28 @@ app.component('twitterItem', {
     }
 });
 
+app.controller('AboutScreen', function ($element, $timeout, $scope) {
+
+    var init = function init() {
+        //$timeout(() => $element.find('[screen]').addClass('active'), 50);
+    };
+
+    init();
+
+    _.extend($scope, {});
+});
+
+app.controller('ContentScreen', function ($element, $timeout, $scope) {
+
+    var init = function init() {
+        //$timeout(() => $element.find('[screen]').addClass('active'), 50);
+    };
+
+    init();
+
+    _.extend($scope, {});
+});
+
 app.controller('HomeScreen', function ($element, $timeout, $scope) {
 
     var init = function init() {
@@ -248,7 +270,7 @@ app.controller('HomeScreen', function ($element, $timeout, $scope) {
     _.extend($scope, {});
 });
 
-app.controller('AboutScreen', function ($element, $timeout, $scope) {
+app.controller('Content2Screen', function ($element, $timeout, $scope) {
 
     var init = function init() {
         //$timeout(() => $element.find('[screen]').addClass('active'), 50);

@@ -16,11 +16,12 @@ hero-item {
       background: #eee;
       background-size: cover;
       background-position: center;
-      height: 350px;
+      //height: 350px;
       border: 1px solid white;
       border-top: 2px solid white;
       border-left: 2px solid white;
       min-height: 175px;
+      min-width: 250px;
 
 
       .banner-overlay {
@@ -47,7 +48,7 @@ hero-item {
 
       &.small {
         min-height: 175px;
-        height: 175px;
+        //height: 175px;
 
         .banner-overlay {
           font-size: 20px;
@@ -56,7 +57,7 @@ hero-item {
 
       @include mobile {
         min-height: 175px;
-        height: 175px;
+        //height: 175px;
 
         .banner-overlay {
           font-size: 20px;
