@@ -98,6 +98,23 @@ app.component('contentItem', {
     }
 });
 
+app.component('eventsItem', {
+    templateUrl: 'events.html',
+    controllerAs: 'events',
+    bindings: {
+        img: '@',
+        heading: '@'
+    },
+    controller: function controller($element, $timeout) {
+
+        var init = function init() {};
+
+        init();
+
+        _.extend(this, {});
+    }
+});
+
 app.component('headerItem', {
     templateUrl: 'header.html',
     controllerAs: 'header',
@@ -115,23 +132,6 @@ app.component('headerItem', {
             setPage: Menu.setPage,
             isCurrentPage: Menu.isCurrentPage
         });
-    }
-});
-
-app.component('eventsItem', {
-    templateUrl: 'events.html',
-    controllerAs: 'events',
-    bindings: {
-        img: '@',
-        heading: '@'
-    },
-    controller: function controller($element, $timeout) {
-
-        var init = function init() {};
-
-        init();
-
-        _.extend(this, {});
     }
 });
 
@@ -225,7 +225,8 @@ app.component('twitterItem', {
     controllerAs: 'twitter',
     bindings: {
         img: '@',
-        heading: '@'
+        heading: '@',
+        boxClass: '@'
     },
     controller: function controller($element, $timeout) {
 
@@ -237,7 +238,7 @@ app.component('twitterItem', {
     }
 });
 
-app.controller('AboutScreen', function ($element, $timeout, $scope) {
+app.controller('ContentScreen', function ($element, $timeout, $scope) {
 
     var init = function init() {
         //$timeout(() => $element.find('[screen]').addClass('active'), 50);
@@ -248,7 +249,7 @@ app.controller('AboutScreen', function ($element, $timeout, $scope) {
     _.extend($scope, {});
 });
 
-app.controller('ContentScreen', function ($element, $timeout, $scope) {
+app.controller('AboutScreen', function ($element, $timeout, $scope) {
 
     var init = function init() {
         //$timeout(() => $element.find('[screen]').addClass('active'), 50);

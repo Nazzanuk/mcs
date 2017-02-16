@@ -37,6 +37,47 @@
         </div>
     </div>
 </script>
+<script type="text/ng-template" id="events.html">
+    <div class="box box-gap">
+        <div class="events flex">
+
+            <div class="event flex flex-row">
+                <div class="event-date flex flex-justify flex-align flex-min">
+                    <div class="number">12</div>
+                    <div class="month">Aug</div>
+                </div>
+                <div>
+                    <h3>أحدث نكره</h3>
+                    <p>في ذلك الوقت، لا بد أن تقع الانزعاج نتيجة</p>
+                </div>
+            </div>
+
+            <div class="event flex flex-row">
+                <div class="event-date flex flex-justify flex-align flex-min">
+                    <div class="number">23</div>
+                    <div class="month">Sep</div>
+                </div>
+                <div>
+                    <h3>أحدث نكره</h3>
+                    <p>في ذلك الوقت، لا بد أن تقع الانزعاج نتيجة</p>
+                </div>
+            </div>
+
+            <div class="event flex flex-row">
+                <div class="event-date flex flex-justify flex-align flex-min">
+                    <div class="number">30</div>
+                    <div class="month">Jul</div>
+                </div>
+                <div>
+                    <h3>أحدث نكره</h3>
+                    <p>في ذلك الوقت، لا بد أن تقع الانزعاج نتيجة</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</script>
 <script type="text/ng-template" id="header.html">
     <!--<div class="mobile-menu hidden-md hidden-lg">-->
 
@@ -117,47 +158,6 @@
         </div>
 
     </div>
-</script>
-<script type="text/ng-template" id="events.html">
-    <div class="box box-gap">
-        <div class="events flex">
-
-            <div class="event flex flex-row">
-                <div class="event-date flex flex-justify flex-align flex-min">
-                    <div class="number">12</div>
-                    <div class="month">Aug</div>
-                </div>
-                <div>
-                    <h3>أحدث نكره</h3>
-                    <p>في ذلك الوقت، لا بد أن تقع الانزعاج نتيجة</p>
-                </div>
-            </div>
-
-            <div class="event flex flex-row">
-                <div class="event-date flex flex-justify flex-align flex-min">
-                    <div class="number">23</div>
-                    <div class="month">Sep</div>
-                </div>
-                <div>
-                    <h3>أحدث نكره</h3>
-                    <p>في ذلك الوقت، لا بد أن تقع الانزعاج نتيجة</p>
-                </div>
-            </div>
-
-            <div class="event flex flex-row">
-                <div class="event-date flex flex-justify flex-align flex-min">
-                    <div class="number">30</div>
-                    <div class="month">Jul</div>
-                </div>
-                <div>
-                    <h3>أحدث نكره</h3>
-                    <p>في ذلك الوقت، لا بد أن تقع الانزعاج نتيجة</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
 </script>
 <script type="text/ng-template" id="hero.html">
     <div class="container">
@@ -332,7 +332,7 @@
     </div>
 </script>
 <script type="text/ng-template" id="twitter.html">
-    <div class="box box-gap">
+    <div class="box box-gap {{twitter.boxClass}}">
         <div class="twitter flex">
 
             <div class="tweet flex flex-row flex-auto">
@@ -365,16 +365,6 @@
         </div>
     </div>
 
-</script>
-<script type="text/ng-template" id="about-screen.html">
-    <div screen="about">
-
-        <!-- one way pass values to component -->
-        <hero-item
-                img="https://source.unsplash.com/category/nature/1200/500/?random&123"
-                heading="About Angular Base"
-        ></hero-item>
-    </div>
 </script>
 <script type="text/ng-template" id="content-screen.html">
     <div screen="content">
@@ -418,6 +408,8 @@
                                     <p>بـ إعادة أعمال إيو, إنطلاق تكاليف المعاهدات ثم ذلك. وإعلان بالتوقيع الخارجية أخر و</p>
                                 </div>
                             </div>
+
+                            <twitter-item box-class="box-margin"></twitter-item>
                         </div>
 
                     </div>
@@ -427,6 +419,16 @@
 
         </div>
 
+    </div>
+</script>
+<script type="text/ng-template" id="about-screen.html">
+    <div screen="about">
+
+        <!-- one way pass values to component -->
+        <hero-item
+                img="https://source.unsplash.com/category/nature/1200/500/?random&123"
+                heading="About Angular Base"
+        ></hero-item>
     </div>
 </script>
 <script type="text/ng-template" id="content-2-screen.html">

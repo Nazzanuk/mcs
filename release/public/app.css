@@ -127,10 +127,11 @@ img {
     cursor: pointer; }
     .box.box-clickable:hover {
       transform: scale(1.05); }
-  .box.box-margin {
-    margin: 15px; }
   .box.box-gap {
     margin-top: 30px; }
+  .box.box-margin {
+    margin-top: 0;
+    margin: 15px; }
   .box .box-image {
     height: 150px;
     background: #eee;
@@ -191,6 +192,27 @@ content-item .content {
     content-item .content p a {
       font-weight: 600;
       color: #4b7d3c; }
+
+events-item .events .event {
+  padding: 15px 0;
+  margin: 0 15px;
+  border-bottom: 3px solid #e4e8eb; }
+  events-item .events .event:last-child {
+    border: none; }
+  events-item .events .event .event-date {
+    background: #4b7d3c;
+    color: white;
+    height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    border-radius: 3px;
+    margin-left: 15px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif; }
+    events-item .events .event .event-date .number {
+      font-size: 23px; }
+  events-item .events .event p {
+    margin-top: 5px; }
 
 header-item .mobile-menu {
   position: fixed;
@@ -318,27 +340,6 @@ header-item .header {
       border-radius: 30px;
       padding: 0 15px;
       outline: none; }
-
-events-item .events .event {
-  padding: 15px 0;
-  margin: 0 15px;
-  border-bottom: 3px solid #e4e8eb; }
-  events-item .events .event:last-child {
-    border: none; }
-  events-item .events .event .event-date {
-    background: #4b7d3c;
-    color: white;
-    height: 60px;
-    min-width: 60px;
-    max-width: 60px;
-    border-radius: 3px;
-    margin-left: 15px;
-    text-align: center;
-    font-family: 'Oswald', sans-serif; }
-    events-item .events .event .event-date .number {
-      font-size: 23px; }
-  events-item .events .event p {
-    margin-top: 5px; }
 
 hero-item .hero {
   position: relative;

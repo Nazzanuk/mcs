@@ -206,12 +206,13 @@ img {
     }
   }
 
-  &.box-margin {
-    margin: 15px;
-  }
-
   &.box-gap {
     margin-top: 30px;
+  }
+
+  &.box-margin {
+    margin-top: 0;
+    margin: 15px;
   }
 
   .box-image {

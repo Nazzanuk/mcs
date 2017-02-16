@@ -3,7 +3,8 @@ app.component('twitterItem', {
     controllerAs: 'twitter',
     bindings: {
         img: '@',
-        heading: '@'
+        heading: '@',
+        boxClass:'@'
     },
     controller: function ($element, $timeout) {
 
