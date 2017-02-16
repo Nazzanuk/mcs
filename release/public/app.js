@@ -81,13 +81,13 @@ app.service('Menu', function ($state, $stateParams, $timeout) {
     };
 });
 
-app.component('contentItem', {
-    templateUrl: 'content.html',
-    controllerAs: 'content',
-    transclude: {
-        content: '?content'
+app.component('eventsItem', {
+    templateUrl: 'events.html',
+    controllerAs: 'events',
+    bindings: {
+        img: '@',
+        heading: '@'
     },
-    bindings: {},
     controller: function controller($element, $timeout) {
 
         var init = function init() {};
@@ -98,13 +98,13 @@ app.component('contentItem', {
     }
 });
 
-app.component('eventsItem', {
-    templateUrl: 'events.html',
-    controllerAs: 'events',
-    bindings: {
-        img: '@',
-        heading: '@'
+app.component('contentItem', {
+    templateUrl: 'content.html',
+    controllerAs: 'content',
+    transclude: {
+        content: '?content'
     },
+    bindings: {},
     controller: function controller($element, $timeout) {
 
         var init = function init() {};
@@ -238,17 +238,6 @@ app.component('twitterItem', {
     }
 });
 
-app.controller('ContentScreen', function ($element, $timeout, $scope) {
-
-    var init = function init() {
-        //$timeout(() => $element.find('[screen]').addClass('active'), 50);
-    };
-
-    init();
-
-    _.extend($scope, {});
-});
-
 app.controller('AboutScreen', function ($element, $timeout, $scope) {
 
     var init = function init() {
@@ -260,7 +249,7 @@ app.controller('AboutScreen', function ($element, $timeout, $scope) {
     _.extend($scope, {});
 });
 
-app.controller('Content2Screen', function ($element, $timeout, $scope) {
+app.controller('HomeScreen', function ($element, $timeout, $scope) {
 
     var init = function init() {
         //$timeout(() => $element.find('[screen]').addClass('active'), 50);
@@ -271,7 +260,18 @@ app.controller('Content2Screen', function ($element, $timeout, $scope) {
     _.extend($scope, {});
 });
 
-app.controller('HomeScreen', function ($element, $timeout, $scope) {
+app.controller('ContentScreen', function ($element, $timeout, $scope) {
+
+    var init = function init() {
+        //$timeout(() => $element.find('[screen]').addClass('active'), 50);
+    };
+
+    init();
+
+    _.extend($scope, {});
+});
+
+app.controller('Content2Screen', function ($element, $timeout, $scope) {
 
     var init = function init() {
         //$timeout(() => $element.find('[screen]').addClass('active'), 50);

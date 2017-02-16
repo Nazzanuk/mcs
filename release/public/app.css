@@ -177,22 +177,6 @@ img {
     -ms-flex-item-align: end;
         align-self: flex-end; }
 
-content-item .content {
-  font-size: 16px;
-  font-weight: 300; }
-  content-item .content h1, content-item .content h2, content-item .content h3, content-item .content h4, content-item .content p {
-    margin: 10px 0 0;
-    padding: 10px 0 0; }
-  content-item .content h1 {
-    font-size: 40px;
-    font-weight: 100; }
-  content-item .content p {
-    font-size: 16px;
-    font-weight: 300; }
-    content-item .content p a {
-      font-weight: 600;
-      color: #4b7d3c; }
-
 events-item .events .event {
   padding: 15px 0;
   margin: 0 15px;
@@ -213,6 +197,22 @@ events-item .events .event {
       font-size: 23px; }
   events-item .events .event p {
     margin-top: 5px; }
+
+content-item .content {
+  font-size: 16px;
+  font-weight: 300; }
+  content-item .content h1, content-item .content h2, content-item .content h3, content-item .content h4, content-item .content p {
+    margin: 10px 0 0;
+    padding: 10px 0 0; }
+  content-item .content h1 {
+    font-size: 40px;
+    font-weight: 100; }
+  content-item .content p {
+    font-size: 16px;
+    font-weight: 300; }
+    content-item .content p a {
+      font-weight: 600;
+      color: #4b7d3c; }
 
 header-item .mobile-menu {
   position: fixed;
@@ -365,8 +365,9 @@ hero-item .hero {
     min-width: 250px; }
     hero-item .hero .hero-banner .banner-overlay {
       position: absolute;
-      left: 0;
+      right: 0;
       bottom: 0;
+      max-width: 100%;
       padding: 15px 30px;
       text-align: left;
       background: rgba(0, 0, 0, 0.4);
