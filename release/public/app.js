@@ -98,23 +98,6 @@ app.component('contentItem', {
     }
 });
 
-app.component('eventsItem', {
-    templateUrl: 'events.html',
-    controllerAs: 'events',
-    bindings: {
-        img: '@',
-        heading: '@'
-    },
-    controller: function controller($element, $timeout) {
-
-        var init = function init() {};
-
-        init();
-
-        _.extend(this, {});
-    }
-});
-
 app.component('headerItem', {
     templateUrl: 'header.html',
     controllerAs: 'header',
@@ -135,9 +118,9 @@ app.component('headerItem', {
     }
 });
 
-app.component('linksItem', {
-    templateUrl: 'links.html',
-    controllerAs: 'links',
+app.component('eventsItem', {
+    templateUrl: 'events.html',
+    controllerAs: 'events',
     bindings: {
         img: '@',
         heading: '@'
@@ -155,6 +138,23 @@ app.component('linksItem', {
 app.component('heroItem', {
     templateUrl: 'hero.html',
     controllerAs: 'hero',
+    bindings: {
+        img: '@',
+        heading: '@'
+    },
+    controller: function controller($element, $timeout) {
+
+        var init = function init() {};
+
+        init();
+
+        _.extend(this, {});
+    }
+});
+
+app.component('linksItem', {
+    templateUrl: 'links.html',
+    controllerAs: 'links',
     bindings: {
         img: '@',
         heading: '@'
@@ -203,9 +203,9 @@ app.component('newsItem', {
     }
 });
 
-app.component('twitterItem', {
-    templateUrl: 'twitter.html',
-    controllerAs: 'twitter',
+app.component('servicesItem', {
+    templateUrl: 'services.html',
+    controllerAs: 'services',
     bindings: {
         img: '@',
         heading: '@'
@@ -220,9 +220,9 @@ app.component('twitterItem', {
     }
 });
 
-app.component('servicesItem', {
-    templateUrl: 'services.html',
-    controllerAs: 'services',
+app.component('twitterItem', {
+    templateUrl: 'twitter.html',
+    controllerAs: 'twitter',
     bindings: {
         img: '@',
         heading: '@'
