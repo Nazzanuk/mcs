@@ -217,6 +217,35 @@ events-item .events .event {
   events-item .events .event p {
     margin-top: 5px; }
 
+foot-item .foot {
+  margin-top: 30px;
+  padding: 30px;
+  background: #e9eaec;
+  text-align: center; }
+  foot-item .foot a {
+    display: block;
+    color: white;
+    color: #212121;
+    text-decoration: none;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 10px; }
+  foot-item .foot h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #167e43; }
+
+foot-item .foot-bottom {
+  background: #dbdde0;
+  text-align: center;
+  color: #212121;
+  line-height: 40px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px; }
+
 header-item .mobile-menu {
   position: fixed;
   top: 0;
@@ -394,35 +423,6 @@ hero-item .hero {
         min-height: 175px; }
         hero-item .hero .hero-banner .banner-overlay {
           font-size: 20px; } }
-
-foot-item .foot {
-  margin-top: 30px;
-  padding: 30px;
-  background: #ced0d4;
-  text-align: center; }
-  foot-item .foot a {
-    display: block;
-    color: white;
-    color: #212121;
-    text-decoration: none;
-    line-height: 20px;
-    font-weight: 500;
-    font-size: 16px;
-    margin-top: 10px; }
-  foot-item .foot h3 {
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-size: 16px;
-    color: #167e43; }
-
-foot-item .foot-bottom {
-  background: #c0c3c9;
-  text-align: center;
-  color: #212121;
-  line-height: 40px;
-  height: 40px;
-  font-weight: 500;
-  font-size: 16px; }
 
 links-item .links .link {
   padding: 15px 0;

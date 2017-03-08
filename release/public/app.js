@@ -16,6 +16,36 @@ app.directive('ngEnter', function () {
     };
 });
 
+app.service('Menu', function ($state, $stateParams, $timeout) {
+
+    var currentPage,
+        pages = [{ name: "Home", slug: "home" }, { name: "About", slug: "about" }];
+
+    var setPage = function setPage(slug) {
+        currentPage = slug;
+        $state.go(slug);
+    };
+
+    var isCurrentPage = function isCurrentPage(slug) {
+        return slug == (currentPage || $state.current.name);
+    };
+
+    var init = function init() {
+        console.log($state);
+        console.log('$state.get()', $state.get());
+    };
+
+    init();
+
+    return {
+        getPages: function getPages() {
+            return pages;
+        },
+        setPage: setPage,
+        isCurrentPage: isCurrentPage
+    };
+});
+
 app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
     //this controls the animations for each transition
@@ -51,36 +81,6 @@ var Route = function Route(name, url, resolve) {
     });
 };
 
-app.service('Menu', function ($state, $stateParams, $timeout) {
-
-    var currentPage,
-        pages = [{ name: "Home", slug: "home" }, { name: "About", slug: "about" }];
-
-    var setPage = function setPage(slug) {
-        currentPage = slug;
-        $state.go(slug);
-    };
-
-    var isCurrentPage = function isCurrentPage(slug) {
-        return slug == (currentPage || $state.current.name);
-    };
-
-    var init = function init() {
-        console.log($state);
-        console.log('$state.get()', $state.get());
-    };
-
-    init();
-
-    return {
-        getPages: function getPages() {
-            return pages;
-        },
-        setPage: setPage,
-        isCurrentPage: isCurrentPage
-    };
-});
-
 app.component('contentItem', {
     templateUrl: 'content.html',
     controllerAs: 'content',
@@ -106,6 +106,22 @@ app.component('eventsItem', {
         heading: '@'
     },
     controller: function controller($element, $timeout) {
+
+        var init = function init() {};
+
+        init();
+
+        _.extend(this, {});
+    }
+});
+
+app.component('footItem', {
+    templateUrl: 'foot.html',
+    controllerAs: 'foot',
+    bindings: {
+        img: '@'
+    },
+    controller: function controller(Menu) {
 
         var init = function init() {};
 
@@ -143,22 +159,6 @@ app.component('heroItem', {
         heading: '@'
     },
     controller: function controller($element, $timeout) {
-
-        var init = function init() {};
-
-        init();
-
-        _.extend(this, {});
-    }
-});
-
-app.component('footItem', {
-    templateUrl: 'foot.html',
-    controllerAs: 'foot',
-    bindings: {
-        img: '@'
-    },
-    controller: function controller(Menu) {
 
         var init = function init() {};
 
