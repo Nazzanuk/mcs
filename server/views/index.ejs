@@ -30,6 +30,13 @@
 <div ui-view></div>
 
 
+<script type="text/ng-template" id="content.html">
+    <div class="content">
+        <div class="container">
+            <div ng-transclude="content"></div>
+        </div>
+    </div>
+</script>
 <script type="text/ng-template" id="events.html">
     <div class="box box-gap">
         <div class="events flex">
@@ -70,13 +77,6 @@
         </div>
     </div>
 
-</script>
-<script type="text/ng-template" id="content.html">
-    <div class="content">
-        <div class="container">
-            <div ng-transclude="content"></div>
-        </div>
-    </div>
 </script>
 <script type="text/ng-template" id="header.html">
     <!--<div class="mobile-menu hidden-md hidden-lg">-->
@@ -179,6 +179,36 @@
         </div>
     </div>
 </script>
+<script type="text/ng-template" id="foot.html">
+    <div class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>خدمات</h3>
+                    <a href="#">انها تحتاج فقط</a>
+                    <a href="#"> أسوأ، والضعف،</a>
+                    <a href="#"> دولور الجلوس</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>من نحن</h3>
+                    <a href="#"> أسوأ، والضعف،</a>
+                    <a href="#"> دولور الجلوس</a>
+                    <a href="#">أو لمتابعة له </a>
+                </div>
+                <div class="col-md-4">
+                    <h3>اتصل</h3>
+                    <a href="#"> دولور الجلوس</a>
+                    <a href="#">أو لمتابعة له </a>
+                    <a href="#">انها تحتاج فقط</a>
+                    <a href="#">أو لمتابعة له </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="foot-bottom">حقوق التأليف والنشر 2017 المملكة العربية السعودية</div>
+</script>
 <script type="text/ng-template" id="links.html">
     <div class="box box-gap">
         <div class="links flex">
@@ -249,9 +279,11 @@
 <script type="text/ng-template" id="news.html">
     <div class="news">
         <div class="container">
+
+            <h3 class="section-title">الاخبار المهمه</h3>
             <div class="flex flex-row flex-wrap box-container">
 
-                <div class="box box-margin box-clickable">
+                <div class="box box-margin box-clickable box-gap">
                     <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x512')"></div>
                     <div class="box-content">
                         <h3>وترفض أي مكاتب كبيرة</h3>
@@ -259,7 +291,7 @@
                     </div>
                 </div>
 
-                <div class="box box-margin box-clickable">
+                <div class="box box-margin box-clickable box-gap">
                     <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x511')"></div>
                     <div class="box-content">
                         <h3>أعمى من جانب الادخار</h3>
@@ -267,7 +299,7 @@
                     </div>
                 </div>
 
-                <div class="box box-margin box-clickable">
+                <div class="box box-margin box-clickable box-gap">
                     <div class="box-image" style="background-image: url('https://source.unsplash.com/category/nature/1200x510')"></div>
                     <div class="box-content">
                         <h3>لقب يذهب هنا</h3>
@@ -374,79 +406,6 @@
                 img="https://source.unsplash.com/category/nature/1200/500/?random&123"
                 heading="About Angular Base"
         ></hero-item>
-    </div>
-</script>
-<script type="text/ng-template" id="home-screen.html">
-    <div screen="home">
-
-        <div class="section flush">
-            <services-item></services-item>
-        </div>
-
-        <div class="section flush">
-            <hero-item></hero-item>
-        </div>
-
-        <div class="container">
-            <div class="tabs flex flex-row">
-                <div class="tab active">أحدث الأخبار</div>
-                <div class="tab">الموارد البشرية</div>
-                <div class="tab">الأمور المالية</div>
-                <div class="tab">أنشطة</div>
-            </div>
-        </div>
-
-        <div class="section white">
-            <news-item></news-item>
-        </div>
-
-        <div class="section flush">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h3 class="section-title">الأحداث القادمة</h3>
-                        <events-item></events-item>
-                    </div>
-                    <div class="col-md-4">
-                        <h3 class="section-title">روابط خارجية</h3>
-                        <links-item></links-item>
-                    </div>
-                    <div class="col-md-4">
-                        <h3 class="section-title">الدراسة الاستقصائية</h3>
-                        <div class="box box-gap">
-                            <div class="box-content">
-                                <h3>تصويت</h3>
-                                <p>أبجد هوز دولور الجلوس امات، إيليت. للحصول على الألم النفسي، وهذا، أنه في الوقت الذي لا أحد، لا؟</p>
-                                <!--<p>-->
-                                <img src="http://www.conceptdraw.com/How-To-Guide/picture/bar-diagram-problem-solving-manufacturing.png" alt="" style="max-width: 100%; margin: 0px -15px -30px;height: 200px;">
-                                <!--</p>-->
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section flush">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h3 class="section-title">أحدث وسائل الإعلام</h3>
-                        <media-item></media-item>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="gap-remove-tablet"></div>
-                        <h3 class="section-title">تغريد</h3>
-                        <twitter-item></twitter-item>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
     </div>
 </script>
 <script type="text/ng-template" id="content-screen.html">
@@ -558,6 +517,82 @@
 
     </div>
 </script>
+<script type="text/ng-template" id="home-screen.html">
+    <div screen="home">
+
+        <div class="section flush">
+            <services-item></services-item>
+        </div>
+
+        <div class="section flush">
+            <hero-item></hero-item>
+        </div>
+
+        <div class="container">
+            <div class="tabs flex flex-row">
+                <div class="tab active">أحدث الأخبار</div>
+                <div class="tab">الموارد البشرية</div>
+                <div class="tab">الأمور المالية</div>
+                <div class="tab">أنشطة</div>
+            </div>
+        </div>
+
+        <div class="section white">
+            <news-item></news-item>
+        </div>
+
+        <div class="section flush">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="section-title">الأحداث القادمة</h3>
+                        <events-item></events-item>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="section-title">روابط خارجية</h3>
+                        <links-item></links-item>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="section-title">الدراسة الاستقصائية</h3>
+                        <div class="box box-gap">
+                            <div class="box-content">
+                                <h3>تصويت</h3>
+                                <p>أبجد هوز دولور الجلوس امات، إيليت. للحصول على الألم النفسي، وهذا، أنه في الوقت الذي لا أحد، لا؟</p>
+                                <!--<p>-->
+                                <img src="http://www.conceptdraw.com/How-To-Guide/picture/bar-diagram-problem-solving-manufacturing.png" alt="" style="max-width: 100%; margin: 0px -15px -30px;height: 200px;">
+                                <!--</p>-->
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section flush">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 class="section-title">أحدث وسائل الإعلام</h3>
+                        <media-item></media-item>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="gap-remove-tablet"></div>
+                        <h3 class="section-title">تغريد</h3>
+                        <twitter-item></twitter-item>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</script>
+<foot-item></foot-item>
+
+
 <script src="public/lib.js"></script>
 <script src="public/app.js"></script>
 

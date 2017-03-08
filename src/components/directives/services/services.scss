@@ -11,6 +11,7 @@ services-item {
       flex:1 0 110px;
       padding: 15px;
       text-align: center;
+      //color: $secondary;
 
       .service-icon {
         color: $primary;
@@ -26,7 +27,12 @@ services-item {
       }
 
       .service-text {
-        color: $body;
+        //color: $body;
+        color: $primary;
+        //background: $light;
+        border-radius: 5px;
+        padding: 3px 15px;
+        //color: $secondary;
         font-family: 'Oswald', 'Mada', sans-serif;
         font-size: 16px;
         margin-top: 5px;

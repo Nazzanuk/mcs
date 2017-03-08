@@ -1,7 +1,10 @@
 $body: #212121;
 $primary: #4b7d3c;
+$primary: #167e43;
 $secondary: #e2d89c;
+$secondary: #dbb651;
 $light: #e4e8eb;
+$light: #e9eaec;
 
 html, body {
   font-family: 'Roboto', 'Mada', sans-serif;
@@ -124,6 +127,10 @@ img {
   display: inline-block;
   border-radius: 3px;
   margin-top: 30px;
+
+  background: $secondary;
+  color: white;
+  font-weight: 600;
 }
 
 .section {
@@ -170,7 +177,7 @@ img {
 
     &.active {
       background: white;
-      border-top: solid 3px $secondary;
+      border-top: solid 3px $primary;
     }
 
     &:hover {
@@ -182,7 +189,7 @@ img {
 
 
 .box-container {
-  margin: -15px;
+  margin: 15px -15px;
 }
 
 .box {
