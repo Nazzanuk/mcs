@@ -16,36 +16,6 @@ app.directive('ngEnter', function () {
     };
 });
 
-app.service('Menu', function ($state, $stateParams, $timeout) {
-
-    var currentPage,
-        pages = [{ name: "Home", slug: "home" }, { name: "About", slug: "about" }];
-
-    var setPage = function setPage(slug) {
-        currentPage = slug;
-        $state.go(slug);
-    };
-
-    var isCurrentPage = function isCurrentPage(slug) {
-        return slug == (currentPage || $state.current.name);
-    };
-
-    var init = function init() {
-        console.log($state);
-        console.log('$state.get()', $state.get());
-    };
-
-    init();
-
-    return {
-        getPages: function getPages() {
-            return pages;
-        },
-        setPage: setPage,
-        isCurrentPage: isCurrentPage
-    };
-});
-
 app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
     //this controls the animations for each transition
@@ -80,6 +50,36 @@ var Route = function Route(name, url, resolve) {
         resolve: resolve
     });
 };
+
+app.service('Menu', function ($state, $stateParams, $timeout) {
+
+    var currentPage,
+        pages = [{ name: "Home", slug: "home" }, { name: "About", slug: "about" }];
+
+    var setPage = function setPage(slug) {
+        currentPage = slug;
+        $state.go(slug);
+    };
+
+    var isCurrentPage = function isCurrentPage(slug) {
+        return slug == (currentPage || $state.current.name);
+    };
+
+    var init = function init() {
+        console.log($state);
+        console.log('$state.get()', $state.get());
+    };
+
+    init();
+
+    return {
+        getPages: function getPages() {
+            return pages;
+        },
+        setPage: setPage,
+        isCurrentPage: isCurrentPage
+    };
+});
 
 app.component('contentItem', {
     templateUrl: 'content.html',
@@ -151,23 +151,6 @@ app.component('headerItem', {
     }
 });
 
-app.component('heroItem', {
-    templateUrl: 'hero.html',
-    controllerAs: 'hero',
-    bindings: {
-        img: '@',
-        heading: '@'
-    },
-    controller: function controller($element, $timeout) {
-
-        var init = function init() {};
-
-        init();
-
-        _.extend(this, {});
-    }
-});
-
 app.component('linksItem', {
     templateUrl: 'links.html',
     controllerAs: 'links',
@@ -188,6 +171,23 @@ app.component('linksItem', {
 app.component('mediaItem', {
     templateUrl: 'media.html',
     controllerAs: 'media',
+    bindings: {
+        img: '@',
+        heading: '@'
+    },
+    controller: function controller($element, $timeout) {
+
+        var init = function init() {};
+
+        init();
+
+        _.extend(this, {});
+    }
+});
+
+app.component('heroItem', {
+    templateUrl: 'hero.html',
+    controllerAs: 'hero',
     bindings: {
         img: '@',
         heading: '@'
