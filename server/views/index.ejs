@@ -108,6 +108,26 @@
     </div>
     <div class="foot-bottom">حقوق التأليف والنشر 2017 المملكة العربية السعودية</div>
 </script>
+<script type="text/ng-template" id="hero.html">
+    <div class="container">
+        <div class="hero">
+            <div class="flex flex-row flex-wrap-mob">
+                <div class="hero-banner" style="background-image: url('https://source.unsplash.com/category/nature/1200x500');">
+                    <div class="banner-overlay">وترفض أي مكاتب كبيرة</div>
+                </div>
+                <div class="flex">
+                    <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x501')">
+                        <div class="banner-overlay">أعمى من جانب الادخار</div>
+                    </div>
+                    <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x502')">
+                        <div class="banner-overlay">لقب يذهب هنا</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</script>
 <script type="text/ng-template" id="header.html">
     <!--<div class="mobile-menu hidden-md hidden-lg">-->
 
@@ -256,26 +276,6 @@
     </div>
 
 </script>
-<script type="text/ng-template" id="hero.html">
-    <div class="container">
-        <div class="hero">
-            <div class="flex flex-row flex-wrap-mob">
-                <div class="hero-banner" style="background-image: url('https://source.unsplash.com/category/nature/1200x500');">
-                    <div class="banner-overlay">وترفض أي مكاتب كبيرة</div>
-                </div>
-                <div class="flex">
-                    <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x501')">
-                        <div class="banner-overlay">أعمى من جانب الادخار</div>
-                    </div>
-                    <div class="hero-banner small" style="background-image: url('https://source.unsplash.com/category/nature/1200x502')">
-                        <div class="banner-overlay">لقب يذهب هنا</div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</script>
 <script type="text/ng-template" id="news.html">
     <div class="news">
         <div class="container">
@@ -398,16 +398,6 @@
     </div>
 
 </script>
-<script type="text/ng-template" id="about-screen.html">
-    <div screen="about">
-
-        <!-- one way pass values to component -->
-        <hero-item
-                img="https://source.unsplash.com/category/nature/1200/500/?random&123"
-                heading="About Angular Base"
-        ></hero-item>
-    </div>
-</script>
 <script type="text/ng-template" id="content-screen.html">
     <div screen="content">
 
@@ -469,6 +459,16 @@
 
         </div>
 
+    </div>
+</script>
+<script type="text/ng-template" id="about-screen.html">
+    <div screen="about">
+
+        <!-- one way pass values to component -->
+        <hero-item
+                img="https://source.unsplash.com/category/nature/1200/500/?random&123"
+                heading="About Angular Base"
+        ></hero-item>
     </div>
 </script>
 <script type="text/ng-template" id="content-2-screen.html">

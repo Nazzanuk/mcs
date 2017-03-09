@@ -85,6 +85,10 @@ h1, h2 {
 
 }
 
+h1 {
+  //color: $primary;
+}
+
 h3 {
   font-size: 16px;
 }
@@ -170,7 +174,7 @@ img {
     line-height: 32px;
     padding: 0 15px;
     background: darken($light, 5%);
-    border-top: solid 3px darken($light, 10%);
+    border-top: solid 3px $secondary;
     cursor: pointer;
     transition: .2s;
     border-radius: 3px 3px 0 0;

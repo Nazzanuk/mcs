@@ -103,7 +103,7 @@ img {
     line-height: 32px;
     padding: 0 15px;
     background: #dbdde0;
-    border-top: solid 3px #ced0d4;
+    border-top: solid 3px #dbb651;
     cursor: pointer;
     transition: .2s;
     border-radius: 3px 3px 0 0;
@@ -247,6 +247,57 @@ foot-item .foot-bottom {
   font-weight: 500;
   font-size: 16px; }
 
+hero-item .hero {
+  position: relative;
+  box-shadow: 0 15px 75px rgba(23, 55, 87, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  border-radius: 3px;
+  overflow: hidden;
+  border: 2px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white; }
+  hero-item .hero .hero-banner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1.5 1 auto;
+        flex: 1.5 1 auto;
+    position: relative;
+    background: #eee;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid white;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    min-height: 175px;
+    min-width: 250px; }
+    hero-item .hero .hero-banner .banner-overlay {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      max-width: 100%;
+      padding: 15px 30px;
+      text-align: left;
+      background: rgba(0, 0, 0, 0.4);
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-grid-column-align: center;
+          justify-items: center;
+      color: white;
+      font-family: 'Oswald', 'Mada', sans-serif;
+      font-size: 35px; }
+    hero-item .hero .hero-banner.small {
+      min-height: 175px; }
+      hero-item .hero .hero-banner.small .banner-overlay {
+        font-size: 20px; }
+    @media (max-width: 767px) {
+      hero-item .hero .hero-banner {
+        min-height: 175px; }
+        hero-item .hero .hero-banner .banner-overlay {
+          font-size: 20px; } }
+
 header-item .mobile-menu {
   position: fixed;
   top: 0;
@@ -363,6 +414,7 @@ header-item .header {
     header-item .header .header-bottom .header-title {
       font-family: 'Oswald', 'Mada', sans-serif;
       color: #167e43;
+      color: #dbb651;
       font-size: 28px; }
     header-item .header .header-bottom .header-section {
       margin-top: 5px; }
@@ -398,57 +450,6 @@ media-item .media {
     background-size: cover;
     background-position: center; }
 
-hero-item .hero {
-  position: relative;
-  box-shadow: 0 15px 75px rgba(23, 55, 87, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-  border-radius: 3px;
-  overflow: hidden;
-  border: 2px solid white;
-  border-top: 1px solid white;
-  border-left: 1px solid white; }
-  hero-item .hero .hero-banner {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex: 1.5 1 auto;
-        flex: 1.5 1 auto;
-    position: relative;
-    background: #eee;
-    background-size: cover;
-    background-position: center;
-    border: 1px solid white;
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    min-height: 175px;
-    min-width: 250px; }
-    hero-item .hero .hero-banner .banner-overlay {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      max-width: 100%;
-      padding: 15px 30px;
-      text-align: left;
-      background: rgba(0, 0, 0, 0.4);
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-line-pack: center;
-          align-content: center;
-      -ms-flex-align: center;
-          align-items: center;
-      -ms-grid-column-align: center;
-          justify-items: center;
-      color: white;
-      font-family: 'Oswald', 'Mada', sans-serif;
-      font-size: 35px; }
-    hero-item .hero .hero-banner.small {
-      min-height: 175px; }
-      hero-item .hero .hero-banner.small .banner-overlay {
-        font-size: 20px; }
-    @media (max-width: 767px) {
-      hero-item .hero .hero-banner {
-        min-height: 175px; }
-        hero-item .hero .hero-banner .banner-overlay {
-          font-size: 20px; } }
-
 news-item .news .box {
   width: 260px; }
   news-item .news .box h3 {
@@ -474,7 +475,7 @@ services-item .services {
       services-item .services .service .service-icon img {
         height: 40px; }
     services-item .services .service .service-text {
-      color: #167e43;
+      color: #212121;
       border-radius: 5px;
       padding: 3px 15px;
       font-family: 'Oswald', 'Mada', sans-serif;
