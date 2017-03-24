@@ -131,6 +131,23 @@ app.component('footItem', {
     }
 });
 
+app.component('heroItem', {
+    templateUrl: 'hero.html',
+    controllerAs: 'hero',
+    bindings: {
+        img: '@',
+        heading: '@'
+    },
+    controller: function controller($element, $timeout) {
+
+        var init = function init() {};
+
+        init();
+
+        _.extend(this, {});
+    }
+});
+
 app.component('headerItem', {
     templateUrl: 'header.html',
     controllerAs: 'header',
@@ -148,23 +165,6 @@ app.component('headerItem', {
             setPage: Menu.setPage,
             isCurrentPage: Menu.isCurrentPage
         });
-    }
-});
-
-app.component('heroItem', {
-    templateUrl: 'hero.html',
-    controllerAs: 'hero',
-    bindings: {
-        img: '@',
-        heading: '@'
-    },
-    controller: function controller($element, $timeout) {
-
-        var init = function init() {};
-
-        init();
-
-        _.extend(this, {});
     }
 });
 
@@ -265,7 +265,7 @@ app.controller('AboutScreen', function ($element, $timeout, $scope) {
     _.extend($scope, {});
 });
 
-app.controller('ContentScreen', function ($element, $timeout, $scope) {
+app.controller('Content2Screen', function ($element, $timeout, $scope) {
 
     var init = function init() {
         //$timeout(() => $element.find('[screen]').addClass('active'), 50);
@@ -276,7 +276,7 @@ app.controller('ContentScreen', function ($element, $timeout, $scope) {
     _.extend($scope, {});
 });
 
-app.controller('Content2Screen', function ($element, $timeout, $scope) {
+app.controller('ContentScreen', function ($element, $timeout, $scope) {
 
     var init = function init() {
         //$timeout(() => $element.find('[screen]').addClass('active'), 50);

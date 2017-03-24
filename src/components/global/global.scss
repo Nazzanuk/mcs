@@ -78,7 +78,11 @@ body {
 
 [screen^="content"] {
   background: #e9e3d4;
-  background-size: cover;
+  background: linear-gradient(45deg, #e5decd 12%, transparent 0, transparent 88%, #e5decd 0),
+  linear-gradient(135deg, transparent 37%, #e5decd 0, #e5decd 63%, transparent 0),
+  linear-gradient(45deg, transparent 37%, #e5decd 0, #e5decd 63%, transparent 0) #eae4d5;
+  background-size: 25px 25px;
+  //background-size: cover;
   padding-bottom: 30px;
 }
 

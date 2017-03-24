@@ -39,7 +39,8 @@ body {
 
 [screen^="content"] {
   background: #e9e3d4;
-  background-size: cover;
+  background: linear-gradient(45deg, #e5decd 12%, transparent 0, transparent 88%, #e5decd 0), linear-gradient(135deg, transparent 37%, #e5decd 0, #e5decd 63%, transparent 0), linear-gradient(45deg, transparent 37%, #e5decd 0, #e5decd 63%, transparent 0) #eae4d5;
+  background-size: 25px 25px;
   padding-bottom: 30px; }
 
 h1, h2, h3, h4, h5 {
@@ -256,6 +257,57 @@ foot-item .foot-bottom {
   font-weight: 500;
   font-size: 16px; }
 
+hero-item .hero {
+  position: relative;
+  box-shadow: 0 15px 75px rgba(23, 55, 87, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  border-radius: 3px;
+  overflow: hidden;
+  border: 2px solid white;
+  border-top: 1px solid white;
+  border-left: 1px solid white; }
+  hero-item .hero .hero-banner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1.5 1 auto;
+        flex: 1.5 1 auto;
+    position: relative;
+    background: #eee;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid white;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    min-height: 175px;
+    min-width: 250px; }
+    hero-item .hero .hero-banner .banner-overlay {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      max-width: 100%;
+      padding: 15px 30px;
+      text-align: left;
+      background: rgba(0, 0, 0, 0.4);
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+          align-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-grid-column-align: center;
+          justify-items: center;
+      color: white;
+      font-family: 'Oswald', 'Mada', sans-serif;
+      font-size: 35px; }
+    hero-item .hero .hero-banner.small {
+      min-height: 175px; }
+      hero-item .hero .hero-banner.small .banner-overlay {
+        font-size: 20px; }
+    @media (max-width: 767px) {
+      hero-item .hero .hero-banner {
+        min-height: 175px; }
+        hero-item .hero .hero-banner .banner-overlay {
+          font-size: 20px; } }
+
 header-item .mobile-menu {
   position: fixed;
   top: 0;
@@ -382,57 +434,6 @@ header-item .header {
       border-radius: 30px;
       padding: 0 15px;
       outline: none; }
-
-hero-item .hero {
-  position: relative;
-  box-shadow: 0 15px 75px rgba(23, 55, 87, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-  border-radius: 3px;
-  overflow: hidden;
-  border: 2px solid white;
-  border-top: 1px solid white;
-  border-left: 1px solid white; }
-  hero-item .hero .hero-banner {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex: 1.5 1 auto;
-        flex: 1.5 1 auto;
-    position: relative;
-    background: #eee;
-    background-size: cover;
-    background-position: center;
-    border: 1px solid white;
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    min-height: 175px;
-    min-width: 250px; }
-    hero-item .hero .hero-banner .banner-overlay {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      max-width: 100%;
-      padding: 15px 30px;
-      text-align: left;
-      background: rgba(0, 0, 0, 0.4);
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-line-pack: center;
-          align-content: center;
-      -ms-flex-align: center;
-          align-items: center;
-      -ms-grid-column-align: center;
-          justify-items: center;
-      color: white;
-      font-family: 'Oswald', 'Mada', sans-serif;
-      font-size: 35px; }
-    hero-item .hero .hero-banner.small {
-      min-height: 175px; }
-      hero-item .hero .hero-banner.small .banner-overlay {
-        font-size: 20px; }
-    @media (max-width: 767px) {
-      hero-item .hero .hero-banner {
-        min-height: 175px; }
-        hero-item .hero .hero-banner .banner-overlay {
-          font-size: 20px; } }
 
 links-item .links .link {
   padding: 15px 0;
