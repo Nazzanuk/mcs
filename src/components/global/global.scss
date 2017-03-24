@@ -70,6 +70,18 @@ body {
   }
 }
 
+[screen="home"] {
+  background: url('/public/img/back.png') no-repeat bottom left;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+[screen^="content"] {
+  background: #e9e3d4;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Oswald', 'Mada', sans-serif;
   margin: 20px 0 0;
@@ -143,10 +155,11 @@ img {
 
   &.white {
     background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
   }
 
   &.light {
-    background: $light;
+    //background: $light;
   }
 
   &.flush {

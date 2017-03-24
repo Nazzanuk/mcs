@@ -1,9 +1,10 @@
 foot-item {
   .foot {
-    margin-top: 30px;
+    //margin-top: 30px;
     padding: 30px;
-    background: darken($light, 0%);
+    background: darken(white, 0%);
     text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
 
     a {
       display: block;
@@ -25,7 +26,7 @@ foot-item {
   }
 
   .foot-bottom {
-    background: darken($light, 5%);
+    background: darken(white, 5%);
     text-align: center;
     color: $body;
     line-height: 40px;
